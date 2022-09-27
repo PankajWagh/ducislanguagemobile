@@ -46,13 +46,14 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
     categoriescourses: any = [];
     categoriesshowhide: any = [];
 	categories: any  = [];
+	courseCategoriesIds: any = [];
     loaded = false;
     coursesLoaded = 0;
     canLoadMore = false;
     loadMoreError = false;
 	isShown: boolean = false ; // hidden by default
     showOnlyEnrolled = false;
-
+	courseIds = '';
     protected loadedCourses: (CoreCourseBasicSearchedData|CoreEnrolledCourseDataWithExtraInfo)[] = [];
     protected loadCoursesPerPage = 100;
     protected currentSiteId: string;
@@ -62,8 +63,6 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
     protected myCoursesObserver: CoreEventObserver;
     protected siteUpdatedObserver: CoreEventObserver;
     protected downloadEnabledObserver: CoreEventObserver;
-    protected courseIds = '';
-    protected courseCategoriesIds: any = [];
     protected isDestroyed = false;
 
     constructor() {
