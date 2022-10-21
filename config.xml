@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="40101" id="com.ducislanguage.mobile" ios-CFBundleVersion="4.0.1.0" version="4.0.1" versionCode="40101" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="10007" id="com.ducislanguage.mobile" ios-CFBundleVersion="1.0.0.7" version="1.0.7" versionCode="10007" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ducis Learning App</name>
     <description>Ducis Learning app</description>
     <author email="navin@skillheads.in" href="http://skillheads.in">Ducis Mobile team</author>
@@ -177,12 +177,6 @@
             </feature>
         </config-file>
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="SplashScreen">
-                <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
             <feature name="StatusBar">
                 <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
                 <param name="onload" value="true" />
@@ -198,7 +192,7 @@
                 <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
             </feature>
         </config-file>
-        <config-file  parent="/manifest/application" target="AndroidManifest.xml">
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.adobe.phonegap.push.PushHandlerActivity" android:permission="${applicationId}.permission.PushHandlerActivity" />
             <receiver android:name="com.adobe.phonegap.push.BackgroundActionButtonHandler" />
             <receiver android:name="com.adobe.phonegap.push.PushDismissedHandler" />
@@ -207,7 +201,7 @@
                     <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 </intent-filter>
             </service>
-            <service android:exported="true" android:name="com.adobe.phonegap.push.PushInstanceIDListenerServicePushInstanceIDListenerService">
+            <service android:exported="true" android:name="com.adobe.phonegap.push.PushInstanceIDListenerService">
                 <intent-filter>
                     <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
                 </intent-filter>
@@ -243,6 +237,18 @@
         <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+        <splash density="land-ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
+        <splash density="land-hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
+        <splash density="land-xhdpi" src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="resources/android/splash/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
         <resource-file src="GoogleService-Info.plist" />
@@ -735,6 +741,5 @@
         <icon height="152" src="resources/ios/icon/icon-76@2x.png" width="152" />
         <icon height="167" src="resources/ios/icon/icon-83.5@2x.png" width="167" />
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
-       
     </platform>
 </widget>
