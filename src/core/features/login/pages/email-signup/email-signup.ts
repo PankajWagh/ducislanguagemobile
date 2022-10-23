@@ -46,7 +46,7 @@ import { CoreDom } from '@singletons/dom';
 })
 export class CoreLoginEmailSignupPage implements OnInit {
 
-    @ViewChild(CoreRecaptchaComponent) recaptchaComponent?: CoreRecaptchaComponent;
+@ViewChild(CoreRecaptchaComponent) recaptchaComponent?: CoreRecaptchaComponent;
     @ViewChild('ageForm') ageFormElement?: ElementRef;
     @ViewChild('signupFormEl') signupFormElement?: ElementRef;
 
