@@ -15,9 +15,11 @@
     "target": "es2015",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+	"skipLibCheck":true,
     "lib": [
       "es2018",
-      "dom"
+      "dom",
+	  
     ],
     "types": [
         "@moodlehq/cordova-plugin-file-transfer",

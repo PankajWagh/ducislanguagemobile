@@ -97,7 +97,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "com.ducislanguage.mobile",
         "ios": "id633359593"
     },
     "wsrequestqueuelimit": 10,
