@@ -1,8 +1,8 @@
 {
     "app_id": "com.ducislanguage.mobile",
     "appname": "Ducis Langauage",
-    "versioncode": 10009,
-    "versionname": "1.0.9",
+    "versioncode": 10011,
+    "versionname": "1.0.11",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
@@ -65,16 +65,7 @@
     },
     "wsservice": "moodle_mobile_app",
     "demo_sites": {
-        "student": {
-            "url": "https://school.moodledemo.net",
-            "username": "student",
-            "password": "moodle"
-        },
-        "teacher": {
-            "url": "https://school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle"
-        }
+    
     },
     "zoomlevels": {
         "normal": 100,
@@ -82,8 +73,8 @@
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-     "siteurl": "https://learning.ducislanguage.com/",
-    "sitename": "",
+    "siteurl": "https://learning.ducislanguage.com/",
+    "sitename": "Ducis Langauage",
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
