@@ -1,8 +1,8 @@
 {
     "app_id": "com.ducislanguage.mobile",
     "appname": "Ducis Langauage",
-    "versioncode": 40100,
-    "versionname": "4.0.1",
+    "versioncode": 10009,
+    "versionname": "1.0.9",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
